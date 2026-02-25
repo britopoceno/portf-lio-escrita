@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #F9F7F2;
+  --color-linen: #E8E6E1;
+  --color-terracotta: #A35C44;
+  --color-charcoal: #111111;
+  --color-softgrey: #D1D1D1;
+  --font-sans: 'Montserrat', sans-serif;
+  --font-serif: 'Lora', serif;
+}
+
+@layer base {
+  body {
+    background-color: #d2b48c;
+    /* Bases de madeira/cortiça */
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+      url('https://www.transparenttextures.com/patterns/linen.png');
+    background-size: 50px 50px, 50px 50px, auto;
+    color: var(--color-charcoal);
+    font-family: var(--font-serif);
+    font-size: clamp(16px, 1.2vw, 24px);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .paper-swatch {
+    background-color: var(--color-cream);
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+
+  .paper-swatch:hover {
+    transform: translateY(-2px) rotate(0.5deg);
+  }
+
+  .pin {
+    width: 12px;
+    height: 12px;
+    background-color: var(--color-terracotta);
+    border-radius: 50%;
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+
+  .irregular-1 {
+    border-radius: 2px 3px 40px 4px;
+  }
+
+  .irregular-2 {
+    border-radius: 60px 4px 5px 35px;
+  }
+
+  .irregular-3 {
+    border-radius: 5px 45px 3px 50px;
+  }
+
+  .accent-text {
+    color: var(--color-terracotta);
+  }
+
+  /* Patchwork Elements */
+  .bg-wood {
+    background-color: #bc8f8f;
+    background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+  }
+
+  .bg-cork {
+    background-color: #d2b48c;
+    background-image: url('https://www.transparenttextures.com/patterns/cork-board.png');
+  }
+
+  .bg-grid-paper {
+    background-color: #f0f4f8;
+    background-image: radial-gradient(#d1d1d1 0.5px, transparent 0.5px);
+    background-size: 20px 20px;
+  }
+
+  .tape {
+    position: absolute;
+    background: rgba(222, 184, 135, 0.4);
+    backdrop-filter: blur(1px);
+    width: 60px;
+    height: 20px;
+    z-index: 20;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .tape-top {
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-2deg);
+  }
+
+  .tape-tl {
+    top: -5px;
+    left: -20px;
+    transform: rotate(-45deg);
+  }
+
+  .tape-tr {
+    top: -5px;
+    right: -20px;
+    transform: rotate(45deg);
+  }
+
+  .patchwork-panel {
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.15;
+  }
+}
+
+@media print {
+  @page {
+    margin: 0;
+    size: auto;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    background-color: #d2b48c !important;
+    /* Solid background to avoid rendering issues */
+    background-image: none !important;
+    /* Gradients and textures can fail or turn black */
+    margin: 0;
+    padding: 0;
+  }
+
+  .paper-swatch {
+    break-inside: avoid;
+    box-shadow: none !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    background-color: #F9F7F2 !important;
+  }
+
+  .patchwork-panel {
+    display: none !important;
+    /* Avoid floating panel transparency issues in PDF */
+  }
+
+  header nav,
+  .fixed,
+  .tape {
+    display: none !important;
+    /* Remove non-essential or problematic elements for PDF */
+  }
+
+  .pin {
+    display: block !important;
+    background-color: #A35C44 !important;
+  }
+
+  .accent-text,
+  .text-terracotta {
+    color: #A35C44 !important;
+  }
+}
