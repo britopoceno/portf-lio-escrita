@@ -244,7 +244,7 @@ export default function App() {
                   <span className="text-xs font-sans px-2 py-1 border border-charcoal uppercase tracking-widest">Jogo · Worldbuilding</span>
                 </div>
                 <p className="text-base italic opacity-90 mb-4">
-                  Jogo desenvolvido pela Apetit Studios via Lei Paulo Gustavo. Num semiárido cyberpunk, Timby chega a uma cidade onde o Maestro proibiu a música — e a descobre como arma de resistência. Responsável pelo worldbuilding completo: enredo, diálogos, roteiro, cutscenes e lore das facções (Harmonistas, Dissidentes do Deserto, Vigilância Silenciosa, entre outras).
+                  Jogo desenvolvido pela Apetit Studios via Lei Paulo Gustavo. Num semiárido cyberpunk, Timby chega a uma cidade onde o Maestro proibiu a música — e a descobre como arma de resistência. Responsável pelo worldbuilding completo: enredo, diálogos, roteiro, cutscenes e lore.
                 </p>
                 <span className="text-sm font-sans tracking-widest uppercase opacity-40">Enredo · Diálogos · Roteiro · Lore · Cutscenes</span>
               </div>
