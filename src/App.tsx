@@ -21,7 +21,7 @@ export default function App() {
             <nav className="flex gap-10 text-base font-sans tracking-widest uppercase">
               <a className="hover:text-terracotta transition-colors" href="https://www.linkedin.com/in/vagnerpetit/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
               <a className="hover:text-terracotta transition-colors" href="https://clubberrural.substack.com" target="_blank" rel="noopener noreferrer">Substack</a>
-              <a className="hover:text-terracotta transition-colors" href="mailto:vagnerbritot@gmail.com">Contato</a>
+              <a className="hover:text-terracotta transition-colors" href="mailto:petit@sarjeta.com">Contato</a>
             </nav>
           </header>
           <div className="flex justify-end">
@@ -327,8 +327,8 @@ export default function App() {
               <div className="md:col-span-6 space-y-8">
                 <h3 className="text-xl tracking-[0.3em] font-sans uppercase font-light">Vamos conversar?</h3>
                 <div className="space-y-4">
-                  <a href="mailto:vagnerbritot@gmail.com" className="block text-3xl font-serif italic hover:text-terracotta transition-colors underline decoration-terracotta/20 underline-offset-8">
-                    vagnerbritot@gmail.com
+                  <a href="mailto:petit@sarjeta.com" className="block text-3xl font-serif italic hover:text-terracotta transition-colors underline decoration-terracotta/20 underline-offset-8">
+                    petit@sarjeta.com
                   </a>
                   <p className="text-base opacity-70 max-w-sm italic">
                     Disponível para projetos de escrita técnica, criativa, estratégica, editorial, curatorial ou copywriting.
