@@ -234,7 +234,7 @@ export default function App() {
                   <img
                     src="/cybersemiarida.jpg"
                     alt="Cybersemiárida Gameplay"
-                    className="w-full h-full object-cover object-[center_25%] grayscale hover:grayscale-0 transition-all duration-700"
+                    className="w-full h-full object-cover object-[center_80%] grayscale hover:grayscale-0 transition-all duration-700"
                   />
                 </div>
               </div>
