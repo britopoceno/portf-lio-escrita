@@ -232,7 +232,7 @@ export default function App() {
                 <div className="pin !bg-softgrey"></div>
                 <div className="w-full aspect-video bg-charcoal/5 overflow-hidden">
                   <img
-                    src="https://cyber.apetit.studio/screen-1.png"
+                    src="/cybersemiarida.jpg"
                     alt="Cybersemiárida Gameplay"
                     className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                   />
@@ -246,16 +246,6 @@ export default function App() {
                 <p className="text-base italic opacity-90 mb-4">
                   Jogo desenvolvido pela Apetit Studios via Lei Paulo Gustavo. Num semiárido cyberpunk, Timby chega a uma cidade onde o Maestro proibiu a música — e a descobre como arma de resistência. Responsável pelo worldbuilding completo: enredo, diálogos, roteiro, cutscenes e lore das facções (Harmonistas, Dissidentes do Deserto, Vigilância Silenciosa, entre outras).
                 </p>
-                <div className="flex flex-col gap-4 mb-4">
-                  <a
-                    className="text-sm font-sans tracking-widest uppercase accent-text hover:underline font-medium"
-                    href="https://cyber.apetit.studio"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Site do Jogo →
-                  </a>
-                </div>
                 <span className="text-sm font-sans tracking-widest uppercase opacity-40">Enredo · Diálogos · Roteiro · Lore · Cutscenes</span>
               </div>
             </div>
